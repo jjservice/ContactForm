@@ -1,13 +1,12 @@
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCqRTHhf9g_5tPV1k2SVL1k8xlc55UmgvU",
-  authDomain: "login-form-type.firebaseapp.com",
-  databaseURL: "https://login-form-type-default-rtdb.firebaseio.com",
-  projectId: "login-form-type",
-  storageBucket: "login-form-type.firebasestorage.app",
-  messagingSenderId: "690206833710",
-  appId: "1:690206833710:web:e8e39dc93da680501273bf"
+  apiKey: "AIzaSyAXlszMK3222aSTIjIK2816P7YBcFkf23E",
+  authDomain: "contact-01-ab105.firebaseapp.com",
+  projectId: "contact-01-ab105",
+  storageBucket: "contact-01-ab105.firebasestorage.app",
+  messagingSenderId: "925488993030",
+  appId: "1:925488993030:web:2ef326f77448a84ee80487"
 };
 
 
