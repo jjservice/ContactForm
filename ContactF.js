@@ -1,12 +1,14 @@
 
 // Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAXlszMK3222aSTIjIK2816P7YBcFkf23E",
-  authDomain: "contact-01-ab105.firebaseapp.com",
-  projectId: "contact-01-ab105",
-  storageBucket: "contact-01-ab105.firebasestorage.app",
-  messagingSenderId: "925488993030",
-  appId: "1:925488993030:web:2ef326f77448a84ee80487"
+  apiKey: "AIzaSyA0U3G2RBMyW6HTbLkg4hvqyuse5ZzzKy8",
+  authDomain: "contact-four.firebaseapp.com",
+  databaseURL: "https://contact-four-default-rtdb.firebaseio.com",
+  projectId: "contact-four",
+  storageBucket: "contact-four.firebasestorage.app",
+  messagingSenderId: "150547775720",
+  appId: "1:150547775720:web:bc83725737019bd937095d"
 };
 
 
@@ -14,9 +16,9 @@ const firebaseConfig = {
  firebase.initializeApp(firebaseConfig);
   
  // Reference your database
- var contactFormDB = firebase.database().ref("contactForm");
+ var contactFormDB = firebase.database().ref("contact-Form");
  
- document.getElementById("contactForm").addEventListener("submit", submitForm);
+ document.getElementById("contact-Form").addEventListener("submit", submitForm);
  
  function submitForm(e) {
    e.preventDefault();
@@ -41,7 +43,7 @@ const firebaseConfig = {
    }, 3000); // Delay to allow alert to disappear before redirecting
  
    // Reset the form
-   document.getElementById("contactForm").reset();
+   document.getElementById("contact-Form").reset();
  }
  
  const saveMessages = (name, emailid, msgContent) => {
