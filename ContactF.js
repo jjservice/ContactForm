@@ -2,15 +2,14 @@
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA0U3G2RBMyW6HTbLkg4hvqyuse5ZzzKy8",
-  authDomain: "contact-four.firebaseapp.com",
-  databaseURL: "https://contact-four-default-rtdb.firebaseio.com",
-  projectId: "contact-four",
-  storageBucket: "contact-four.firebasestorage.app",
-  messagingSenderId: "150547775720",
-  appId: "1:150547775720:web:bc83725737019bd937095d"
+  apiKey: "AIzaSyDDNgYos7xGSQ8MQncADmywY0iTtBN6E-A",
+  authDomain: "contact-two-23a71.firebaseapp.com",
+  databaseURL: "https://contact-two-23a71-default-rtdb.firebaseio.com",
+  projectId: "contact-two-23a71",
+  storageBucket: "contact-two-23a71.firebasestorage.app",
+  messagingSenderId: "587610995045",
+  appId: "1:587610995045:web:e8e7e341cb84603eae498c"
 };
-
 
  // Initialize Firebase
  firebase.initializeApp(firebaseConfig);
@@ -26,8 +25,9 @@ const firebaseConfig = {
    var name = getElementVal("name");
    var emailid = getElementVal("emailid");
    var msgContent = getElementVal("msgContent");
+   var phone = getElementVal("phone");
  
-   saveMessages(name, emailid, msgContent);
+   saveMessages(name, emailid, msgContent, phone);
  
    // Enable alert
    document.querySelector(".alert").style.display = "block";
@@ -46,13 +46,14 @@ const firebaseConfig = {
    document.getElementById("contact-Form").reset();
  }
  
- const saveMessages = (name, emailid, msgContent) => {
+ const saveMessages = (name, emailid, msgContent, phone) => {
    var newContactForm = contactFormDB.push();
  
    newContactForm.set({
      name: name,
      emailid: emailid,
      msgContent: msgContent,
+     phone: phone,
    });
  };
  
